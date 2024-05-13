@@ -1,0 +1,35 @@
+.WelcomeText{
+    font-size: 30px;
+    background-color: rgb(13, 149, 207);
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-family: arial;
+    padding-bottom: 40px;
+}
+
+button{
+    font-size: 30px;
+    margin-right: 20px;
+    background-color: white;
+    border: none;
+    transition-duration: 0.4s;
+    color: rgb(13, 149, 207);
+
+}
+
+
+
+button:hover{
+    background-color: rgb(84, 201, 251);
+    cursor: pointer;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(150, 217, 234);
+}
+
+.Home{
+    margin-left: 480px;
+
+}
