@@ -19,11 +19,6 @@ body {
     padding-bottom: 40px;
 }
 
-.navigation {
-    background-color: blueviolet;
-    z-index: 10;
-}
-
 button{
     font-size: 40px;
     margin-right: 20px;
@@ -31,7 +26,6 @@ button{
     border: none;
     transition-duration: 0.4s;
     color: rgb(13, 149, 207);
-    transition: padding-left 0,15s, padding-right 0,15s, padding-top 0,15s, padding-bottom 0,15;
 }
 
 
@@ -41,10 +35,6 @@ button:hover{
     cursor: pointer;
     color: white;
     box-shadow: 10px 5px 5px rgb(150, 217, 234);
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top:12px;
-    padding-bottom: 12px;
 }
 
 .Home{
@@ -60,12 +50,12 @@ button:hover{
     font-style: arial;
     color: white;
     background-color: rgb(13, 149, 207);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-top: 20px;
 }
 
 .ScrollingText {
-    animation: scroll 15s linear infinite;
+    animation: scroll 30s linear infinite;
     white-space: nowrap;
 }
 
@@ -78,9 +68,13 @@ button:hover{
     }
 }
 
-.backgroundnav
-{
-    margin-top:16px;
+.backgroundnav{
+    width: 600px;
+}
+.backgroundnav1{
+    margin-left: 170px;
+    width: 400px;
+    margin-top: 30px;
 }
 
 
