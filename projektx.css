@@ -1,23 +1,31 @@
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .WelcomeText{
     font-size: 30px;
     background-color: rgb(13, 149, 207);
     display: block;
     font-weight: bold;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 0px;
     color: white;
     font-family: arial;
+    margin-top: 0px;
     padding-bottom: 40px;
 }
 
 button{
-    font-size: 30px;
+    font-size: 40px;
     margin-right: 20px;
     background-color: white;
     border: none;
     transition-duration: 0.4s;
     color: rgb(13, 149, 207);
-
 }
 
 
@@ -30,6 +38,40 @@ button:hover{
 }
 
 .Home{
-    margin-left: 480px;
-
+    margin-left: 435px;
 }
+
+
+
+.FlyingText{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: arial;
+    color: white;
+    background-color: rgb(13, 149, 207);
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.ScrollingText {
+    animation: scroll 15s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-13%);
+    }
+}
+
+.backgroundnav
+{
+    margin-top:16px;
+}
+
+
+  
