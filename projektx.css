@@ -42,6 +42,7 @@ button:hover{
     padding-right: 12px;
 }
 
+
 .Home{
     margin-left: 435px;
 }
@@ -73,11 +74,6 @@ button:hover{
     }
 }
 
-.backgroundnav{
-    width: 600px;
-    
-}
-
 .container {
     height: 200px;
     position: relative;
@@ -90,16 +86,20 @@ button:hover{
     TOP: 56%;
     left: 15%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0)
 }
 .backgroundnav1{
-    margin-left: 170px;
     width: 400px;
     margin-top: 30px;
+    TOP: 60%;
+    left: 78%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 }
-
-
-  
 
 
   
