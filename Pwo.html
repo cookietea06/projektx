@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="code.js"></script> 
 
+
     <style>
+
+        .WelcomeText{
+            font-size: 30px;
+            background-color: rgb(13, 149, 207);
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 0px;
+            color: white;
+            font-family: arial;
+            margin-top: 0px;
+            padding-bottom: 40px;
+        }
+
+        .ScrollingText {
+            animation: scroll 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .FlyingText{
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 30px;
+            font-style: arial;
+            color: white;
+            background-color: rgb(13, 149, 207);
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-13%);
+            }
+        }
         .kreatin-text
         {
         font-size: 20px;
@@ -18,31 +58,31 @@
 
         .button1-mono{
             background-color:rgba(0, 0, 0, 0);
-            padding-top: 400px;
-            padding-left: 28px;
-            padding-right: 28px;
+            padding-top: 26vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            margin-right: 300vw;
             font-size: 30px;
             cursor: pointer;
             transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
         }
 
         .button1-mono:hover{
-            padding-top: 410px;
-            padding-bottom: 10px;
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-top: 30vw;
+            padding-left:12vw;
+            padding-right: 9vw;
         }
 
         .container {
-  height: 200px;
-  position: relative;
-  border: 3px solid green;
-}
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+        }
 
 .button1-mono {
   margin: 0;
   position: absolute;
-  TOP: 48%;
+  TOP: 90%;
   left: 18%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -50,19 +90,18 @@
 
         .button2-mono{
             background-color:rgba(0, 0, 0, 0);
-            padding-top: 400px;
-            padding-left: 90px;
-            padding-right: 90px;
+            padding-top: 26vw;
+            padding-left: 8vw;
+            padding-right: 8vw;
             font-size: 30px;
             cursor: pointer;
             transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
         }
 
         .button2-mono:hover{
-            padding-top: 410px;
-            padding-bottom: 10px;
-            padding-left: 102px;
-            padding-right: 102px;
+            padding-top: 30vw;
+            padding-left:12vw;
+            padding-right: 9vw;
         }
 
         .container {
@@ -71,30 +110,18 @@
   border: 3px solid green;
 }
 .button2-mono {
-    margin: 0;
     position: absolute;
-    TOP: 48%;
+    TOP: 90%;
     left: 45%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
 }
 
-    .button3-mono{
-        background-color:rgba(0, 0, 0, 0);
-        padding-top: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 30px;
-        cursor: pointer;  
-        transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
-        }
+::-webkit-scrollbar{
+    display: none;
+}
 
-    .button3-mono:hover{
-        padding-top: 410px;
-        padding-bottom: 10px;
-        padding-left: 32px;
-        padding-right: 32px;
-        }
 
     .container {
   height: 200px;
@@ -102,18 +129,23 @@
   border: 3px solid green;
 }
 
-.button3-mono {
-  margin: 0;
-  position: absolute;
-  TOP: 48%;
-  left: 72%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
     </style>
 </head>
+
+
 <body>
+
+    <div class="FlyingText">
+        <p class="ScrollingText">KOD:SSshop10 10%</p>
+    </div>
+    <p class="WelcomeText">Kosttillskottshoppen</p>
+
+    <nav>
+        <button onclick="link(0)" class="Home">HOME</button>
+        <button onclick="link(1)" class="InfoPROTEIN">PROTEIN</button>
+        <button onclick="link(2)" class="InfoPWO">PWO</button>
+        <button onclick="link(3)" class="infoKREATIN">KREATIN</button>
     <p class="kreatin-text">
         Kreatin är en av kostillskottvärldens giganter. Det är ett säkert och grundligt beprövat kosttillskott som förbättrar prestationsförmågan i högintensiv träning, så som styrketräning.
     </p>
@@ -126,8 +158,5 @@
         PWO C4, 480g
     </button>
 
-    <button class="button3-mono">
-        OFF THE HOOK, 520g
-    </button>
 </body>
 </html>
