@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="code.js"></script> 
 
+
     <style>
+
+        body{
+            overflow: hidden;
+        }
+
+        .WelcomeText{
+            font-size: 30px;
+            background-color: rgb(13, 149, 207);
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 0px;
+            color: white;
+            font-family: arial;
+            margin-top: 0px;
+            padding-bottom: 40px;
+        }
+
+        .ScrollingText {
+            animation: scroll 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .FlyingText{
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 30px;
+            font-style: arial;
+            color: white;
+            background-color: rgb(13, 149, 207);
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-13%);
+            }
+        }
+
+            .navButton{
+                font-size: 40px;
+                margin-right: 20px;
+                background-color: white;
+                border: none;
+                transition-duration: 0.4s;
+                color: rgb(13, 149, 207);
+                transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
+            }
+            
+            
+            
+            .navButton:hover{
+                background-color: rgb(84, 201, 251);
+                cursor: pointer;
+                color: white;
+                box-shadow: 10px 5px 5px rgb(150, 217, 234);
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+    
+            .Home{
+                margin-left: 405px;
+                font-size: 40px;
+                margin-right: 20px;
+                margin-bottom: 0px;
+                background-color: white;
+                border: none;
+                transition-duration: 0.4s;
+                color: rgb(13, 149, 207);
+                transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
+            }
+    
+            .Home:hover{
+                background-color: rgb(84, 201, 251);
+                cursor: pointer;
+                color: white;
+                box-shadow: 10px 5px 5px rgb(150, 217, 234);
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 12px;
+                padding-right: 12px;
+    
+            }
         .kreatin-text
         {
         font-size: 20px;
@@ -18,51 +109,50 @@
 
         .button1-mono{
             background-color:rgba(0, 0, 0, 0);
-            padding-top: 400px;
-            padding-left: 28px;
-            padding-right: 28px;
+            padding-top: 20vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            margin-right: 300vw;
             font-size: 30px;
             cursor: pointer;
             transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
         }
 
         .button1-mono:hover{
-            padding-top: 410px;
-            padding-bottom: 10px;
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-top: 22vw;
+            padding-left:6vw;
+            padding-right: 6vw;
         }
 
         .container {
-  height: 200px;
-  position: relative;
-  border: 3px solid green;
-}
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+        }
 
 .button1-mono {
   margin: 0;
   position: absolute;
-  TOP: 48%;
-  left: 34%;
+  TOP: 70%;
+  left: 30%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
         .button2-mono{
             background-color:rgba(0, 0, 0, 0);
-            padding-top: 400px;
-            padding-left: 90px;
-            padding-right: 90px;
+            padding-top: 20vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
             font-size: 30px;
             cursor: pointer;
             transition: padding-left 0.2s, padding-bottom 0.2s, padding-left 0.2s, padding-right 0.2s;
         }
 
         .button2-mono:hover{
-            padding-top: 410px;
-            padding-bottom: 10px;
-            padding-left: 102px;
-            padding-right: 102px;
+            padding-top: 22vw;
+            padding-left:6vw;
+            padding-right: 6vw;
         }
 
         .container {
@@ -71,27 +161,52 @@
   border: 3px solid green;
 }
 .button2-mono {
-    margin: 0;
     position: absolute;
-    TOP: 48%;
+    TOP: 70%;
     left: 65%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+    .container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
 
     </style>
 </head>
+
+
 <body>
-    <p class="kreatin-text">
-        Kreatin är en av kostillskottvärldens giganter. Det är ett säkert och grundligt beprövat kosttillskott som förbättrar prestationsförmågan i högintensiv träning, så som styrketräning.
-    </p>
+
+    <div class="FlyingText">
+        <p class="ScrollingText">KOD:SSshop10 10%</p>
+    </div>
+    <p class="WelcomeText">Kosttillskottshoppen</p>
+
+    <nav >
+        <button onclick="link(0)" class="Home">HOME</button>
+        <button onclick="link(1)" class="navButton">PROTEIN</button>
+        <button onclick="link(2)" class="navButton">PWO</button>
+        <button onclick="link(3)" class="navButton">KREATIN</button>
+    <nav>
+
 
     <button class="button1-mono">
-        Kreatinmonohydrat, 500 g
+        PWO leviathon, 500 g
     </button>
 
     <button class="button2-mono">
-        CreaKong, 300g
+        PWO C4, 480g
     </button>
+
 </body>
 </html>
